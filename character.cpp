@@ -89,3 +89,15 @@ string Character::getGender()
         gender = "n adventurer";
     return gender;
 }
+
+string Character::getPronoun()
+{
+    string pronoun;
+    if (gen == Male)
+        pronoun = "he";
+    else if (gen == Female)
+        pronoun = "she";
+    else if (gen == They)
+        pronoun = "they";
+    return pronoun;
+}

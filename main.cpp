@@ -4,6 +4,7 @@
 #include <string>
 #include <stdlib.h>
 #include "character.h"
+#include "util.cpp"
 
 using namespace std;
 

@@ -33,6 +33,7 @@ class Character
         void setName(string nameInput);
         void setGender(char genInput);
         string getGender();
+        string getPronoun();
         string getName();
 };
 
