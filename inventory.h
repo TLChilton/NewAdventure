@@ -4,10 +4,9 @@
 class Inventory
 {
     public:
-        Inventory()
-        {
+        Inventory();
 
-        }
+        int getAC();
 };
 
 #endif

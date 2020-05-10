@@ -1,4 +1,4 @@
-#include <character.h>
+#include "character.h"
 #include <string>
 
 using namespace std;
@@ -23,7 +23,18 @@ Character::Character()
 
 void Character::getStats()
 {
-
+    printf("CHARACTER SHEET\n");
+    printf("Name: %s\n", name);
+    printf("Race: %s\n", race);
+    printf("Level: %i", lvl);
+    printf("HP: %i\n", hp);
+    printf("AC: %i\n", inv.getAC());
+    printf("STR: %i\n", str);
+    printf("DEX: %i\n", dex);
+    printf("CON: %i\n", con);
+    printf("INT: %i\n", intel);
+    printf("WIS: %i\n", wis);
+    printf("CHA: %i\n", cha);
 }
 
 void Character::takeDamage(int damage)

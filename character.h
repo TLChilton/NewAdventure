@@ -2,7 +2,7 @@
 #define CHARACTER_H
 
 #include <string>
-#include <inventory.h>
+#include "inventory.h"
 
 using namespace std;
 
@@ -13,7 +13,7 @@ class Character
         int str, dex, con, intel, wis, cha;
         int hp, xp, lvl;
         string name, race;
-        Inventory inv();
+        Inventory inv;
 
     public:
         Character();

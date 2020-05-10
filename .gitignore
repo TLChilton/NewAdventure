@@ -1,0 +1,4 @@
+main.o
+inventory.o
+character.o
+run
