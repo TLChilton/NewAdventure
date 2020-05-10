@@ -25,9 +25,9 @@ Character::Character()
 void Character::getStats()
 {
     printf("CHARACTER SHEET\n");
-    printf("Name: %s\n", name);
-    printf("Race: %s\n", race);
-    printf("Level: %i", lvl);
+    printf("Name: %s\n", name.c_str());
+    printf("Race: %s\n", race.c_str());
+    printf("Level: %i\n", lvl);
     printf("HP: %i\n", hp);
     printf("AC: %i\n", inv.getAC());
     printf("STR: %i\n", str);

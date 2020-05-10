@@ -23,6 +23,6 @@ int main()
     cin >> charEntry;
     player.setGender(charEntry);
     printf("You are a%s. You are fighting a goblin.\n", player.getGender().c_str());
-
+    choiceHandler(player);
 
 }

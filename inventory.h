@@ -3,6 +3,9 @@
 
 class Inventory
 {
+    private:
+        int ac;
+
     public:
         Inventory();
 

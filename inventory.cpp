@@ -2,9 +2,10 @@
 
 Inventory::Inventory()
 {
-
+    ac = 0;
 }
 
 int Inventory::getAC()
 {
+    return ac;
 }
