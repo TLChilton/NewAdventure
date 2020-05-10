@@ -18,6 +18,7 @@ Character::Character()
 
     name = "John Doe";
     race = "Human";
+    gen = Male;
 
 }
 
@@ -59,4 +60,32 @@ void Character::levelUp()
 void Character::setName(string nameInput)
 {
     name = nameInput;
+}
+
+void Character::setGender(char genInput)
+{
+    if (tolower(genInput) == 'm')
+    {
+        gen = Male;
+    }
+    else if (tolower(genInput) == 'f')
+    {
+        gen = Female;
+    }
+    else
+    {
+        gen = They;
+    }
+}
+
+string Character::getGender()
+{
+    string gender;
+    if (gen == Male)
+        gender = " man";
+    else if (gen == Female)
+        gender = " woman";
+    else if (gen == They)
+        gender = "n adventurer";
+    return gender;
 }

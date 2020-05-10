@@ -6,6 +6,13 @@
 
 using namespace std;
 
+enum gender 
+{ 
+    Male,
+    Female,
+    They
+};
+
 class Character
 {
 
@@ -14,6 +21,7 @@ class Character
         int hp, xp, lvl;
         string name, race;
         Inventory inv;
+        enum gender gen;
 
     public:
         Character();
@@ -23,6 +31,9 @@ class Character
         void giveExperience(int xpGained);
         void levelUp();
         void setName(string nameInput);
+        void setGender(char genInput);
+        string getGender();
+        string getName();
 };
 
 #endif

@@ -10,11 +10,18 @@ using namespace std;
 int main()
 {
     string entry;
+    Character player;
+    char charEntry;
 
     printf("Welcome to my adventure \n");
     printf("Please enter the name of your character: ");
-    getline(cin, entry);
-    printf("You are a man. You are fighting a goblin.\n");
+    cin >> entry;
+    player.setName(entry);
+    printf("Please enter your gender \n");
+    printf("(options are M for male, F for female, O for other): ");
+    cin >> charEntry;
+    player.setGender(charEntry);
+    printf("You are a%s. You are fighting a goblin.\n", player.getGender().c_str());
 
 
 }
