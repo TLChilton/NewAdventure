@@ -15,7 +15,7 @@ void printOptions()
     printf("Q: Exit\n");
 }
 
-void choiceHandler(Character player)
+void choiceHandler(Character player, Character enemy)
 {
     char choice;
     do {
@@ -27,7 +27,7 @@ void choiceHandler(Character player)
         }
         else if (tolower(choice) == 'i')
         {
-
+            player.inv.printInv();
         }
         else if (tolower(choice) == 'a')
         {
@@ -45,6 +45,6 @@ void choiceHandler(Character player)
         {
             printOptions();
         }
-    } while (tolower(choice != 'q'));
+    } while (tolower(choice != 'q') && enemy.hp > 0 && player.hp > 0);
 
 }

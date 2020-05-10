@@ -9,3 +9,8 @@ int Inventory::getAC()
 {
     return ac;
 }
+
+void Inventory::printInv()
+{
+
+}

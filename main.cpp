@@ -22,7 +22,8 @@ int main()
     printf("(options are M for male, F for female, O for other): ");
     cin >> charEntry;
     player.setGender(charEntry);
+    Character goblin(2, 2, 2, 2, 2, 2, 30, 1, "Jeff", "goblin");
     printf("You are a%s. You are fighting a goblin.\n", player.getGender().c_str());
-    choiceHandler(player);
+    choiceHandler(player, goblin);
 
 }

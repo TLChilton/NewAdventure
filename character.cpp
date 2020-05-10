@@ -22,6 +22,22 @@ Character::Character()
 
 }
 
+Character::Character(int s, int d, int co, int i, int w, int ch, 
+    int h, int l, string n, string r)
+{
+    hp = h;
+    lvl = l;
+
+    str = s;
+    dex = d;
+    con = co;
+    intel = i;
+    wis = w;
+    cha = ch;
+    name = n;
+    race = r;
+}
+
 void Character::getStats()
 {
     printf("CHARACTER SHEET\n");

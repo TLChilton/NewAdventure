@@ -18,13 +18,16 @@ class Character
 
     private:
         int str, dex, con, intel, wis, cha;
-        int hp, xp, lvl;
+        int xp, lvl;
         string name, race;
-        Inventory inv;
         enum gender gen;
 
     public:
+        Inventory inv;
+        int hp;
         Character();
+        Character(int s, int d, int co, int i, int w, int ch, 
+            int h, int l, string n, string r);
 
         void getStats();
         void takeDamage(int damage);

@@ -10,6 +10,7 @@ class Inventory
         Inventory();
 
         int getAC();
+        void printInv();
 };
 
 #endif
